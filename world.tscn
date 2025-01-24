@@ -1,0 +1,199 @@
+[gd_scene load_steps=6 format=3 uid="uid://bh6piobbhlb2e"]
+
+[ext_resource type="Script" path="res://CharacterBody3D.gd" id="1_7ufk0"]
+[ext_resource type="PackedScene" uid="uid://dpigkv0yof5uq" path="res://cube.tscn" id="2_1gbcv"]
+[ext_resource type="PackedScene" uid="uid://cmgvw5ty1sgsy" path="res://quick_save_menu.tscn" id="3_j3eiy"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_dhcfq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j514e"]
+
+[node name="World" type="Node3D"]
+
+[node name="Parcour" type="Node3D" parent="."]
+
+[node name="Cube" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(3.00359, 0, 0, 0, 1, 0, 0, 0, 1, -0.300191, 0.497253, -3.81602)
+
+[node name="Cube2" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.53954, 0, 0, 0, 1, 0, 0, 0, 2.38224, -3.19971, 1.10835, -0.40756)
+
+[node name="Cube3" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.34565, -0.0369329, 1.15398, -0.144862, 0.965355, 0.579802, -0.733768, -0.258314, 2.00181, 0.213724, 2.58597, 2.32797)
+
+[node name="Cube4" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.0723386, -0.197969, 2.33241, 0.1223, 0.9778, 0.461912, -1.53297, 0.0686667, 0.146914, 3.74141, 4.10798, -0.145313)
+
+[node name="Cube5" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.0982705, 0.0297248, 2.37633, 0.102631, 0.997197, -0.0809508, -1.53297, 0.0686667, 0.146914, 3.77362, 4.87419, -6.45886)
+
+[node name="Cube6" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.0264168, 0.0687815, 6.52074, 0.0275889, 2.30746, -0.222132, -0.412089, 0.158891, 0.403139, -2.83266, 4.95484, -6.916)
+
+[node name="Cube7" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.0797942, -2.2673, -0.34156, 0.301531, 0.248268, 4.42223, -0.272008, -0.389904, 4.802, -7.4915, 8.25631, -0.743939)
+
+[node name="Cube8" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.159752, -2.12387, -0.603966, 0.353924, 0.736966, 2.67313, -0.143156, -0.548084, 5.93477, -7.4915, 12.4149, 7.91238)
+
+[node name="Cube9" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.14941, -2.10207, -1.37759, 0.385802, -0.827686, -0.35994, -0.0104953, -0.50058, 6.38002, 4.66373, 11.9985, 7.42793)
+
+[node name="Cube10" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.14941, -2.10207, -1.37759, 0.376411, -0.90917, 0.886464, -0.0852511, -0.330234, 6.32838, 7.65519, 12.7802, -5.02355)
+
+[node name="Cube11" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.0143233, -0.516241, 6.36819, 0.126528, 2.15289, 1.32185, -0.393779, 0.67298, 0.65637, 13.7441, 14.0291, -7.45188)
+
+[node name="Cube12" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.0180924, -0.649942, 6.26729, 0.0477149, 2.20905, 1.79394, -0.410697, 0.228016, 0.484523, 22.9713, 16.6063, -7.4946)
+
+[node name="Cube13" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.0773983, 2.24949, -0.92346, 0.393733, 0.331844, -1.78198, -0.10129, -0.42896, -6.22123, 24.8172, 19.2898, 0.415216)
+
+[node name="Cube14" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.0116122, 2.26547, 1.31833, 0.382797, 0.235866, -2.39357, -0.156869, 0.407864, -5.93842, 25.2736, 22.1072, 12.4072)
+
+[node name="Cube15" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.0773983, 2.24949, -0.92346, 0.393733, 0.331844, -1.78198, -0.10129, -0.42896, -6.22123, 17.2848, 21.6666, 15.4102)
+
+[node name="Cube16" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.0559589, 2.23526, -0.423471, 0.409948, -0.316695, 0.0150564, -0.0093499, -0.507606, -1.87417, 9.01443, 20.4466, 16.9872)
+
+[node name="Cube17" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.0570621, 2.25184, -0.354008, 0.388833, 0.16114, -0.644255, -0.129728, -0.507514, -1.77529, 5.50411, 21.0731, 22.9812)
+
+[node name="Cube18" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.09837, 3.9368, -0.838534, 3.08058, -1.39514, 0.328609, 0.0252479, -1.03964, -3.61625, -2.7292, 20.9891, 27.7205)
+
+[node name="Cube19" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.09837, 3.9368, -0.838534, 3.08058, -1.39514, 0.328609, 0.0252479, -1.03964, -3.61625, -5.52017, 25.4757, 28.7753)
+
+[node name="Cube20" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(2.0512, 3.20954, -0.838534, 2.53564, -2.69197, 0.328609, -0.245212, -0.988847, -3.61625, -3.66393, 23.0622, 31.943)
+
+[node name="Cube21" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(2.0512, 3.20954, -0.838534, 2.53564, -2.69197, 0.328609, -0.245212, -0.988847, -3.61625, -6.65264, 28.4582, 33.1263)
+
+[node name="Cube22" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(2.0512, 3.20954, -0.838534, 2.53564, -2.69197, 0.328609, -0.245212, -0.988847, -3.61625, -8.38807, 28.2469, 25.6422)
+
+[node name="Cube23" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(6.2051, -0.0522358, -0.332578, -0.200429, -1.02688, 0.130332, -1.45704, -0.0812005, -1.43427, -8.37736, 29.5651, 36.8298)
+
+[node name="Cube24" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(8.27352, -0.0366894, -0.0595384, -0.267241, -0.72126, 0.0233322, -1.94273, -0.0570336, -0.256765, -15.5663, 29.7973, 38.5178)
+
+[node name="Cube25" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(8.27352, -0.0366894, -0.0595384, -0.267241, -0.72126, 0.0233322, -1.94273, -0.0570336, -0.256765, -31.7087, 30.3187, 42.3083)
+
+[node name="Cube29" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(8.27352, -0.0366894, -1.62212, -0.267241, -0.72126, 0.635684, -1.94273, -0.0570336, -6.99553, -39.9725, 30.5857, 44.2487)
+
+[node name="Cube26" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(8.27352, -0.0366894, -0.0595384, -0.267241, -0.72126, 0.0233322, -1.94273, -0.0570336, -0.256765, -26.452, 30.8265, 32.5052)
+
+[node name="Cube27" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(2.82194, -0.0366894, 0.24925, -0.774828, -0.72126, -0.00566858, 7.9833, -0.0570336, -0.0886554, -21.0135, 30.3111, 35.525)
+
+[node name="Cube28" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(2.82194, -0.0366894, 0.24925, -0.774828, -0.72126, -0.00566858, 7.9833, -0.0570336, -0.0886554, -29.0666, 30.5705, 37.4247)
+
+[node name="Cube30" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(29.0895, -0.0366894, -0.0590799, -0.943915, -0.72126, 0.0233173, -6.77614, -0.0570336, -0.256871, -58.9632, 31.2148, 48.5095)
+
+[node name="Cube31" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.27488, -0.210786, -1.43049, -0.0413682, -4.14375, 0.564578, -0.296973, -0.327667, -6.21957, -56.1545, 32.9231, 44.659)
+
+[node name="Cube32" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.27488, -0.210786, -1.43049, -0.0413682, -4.14375, 0.564578, -0.296973, -0.327667, -6.21957, -62.3909, 33.0957, 46.4888)
+
+[node name="Cube33" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.27488, -0.210786, -1.43049, -0.0413682, -4.14375, 0.564578, -0.296973, -0.327667, -6.21957, -68.5625, 33.2637, 48.3343)
+
+[node name="Cube35" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.27488, -0.210786, -1.43049, -0.0413682, -4.14375, 0.564578, -0.296973, -0.327667, -6.21957, -49.1942, 32.7641, 42.1929)
+
+[node name="Cube34" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.27488, -0.27808, -1.02229, -0.0413682, -1.33225, 3.95095, -0.296973, -1.00819, -4.93893, -74.1056, 33.2599, 48.8063)
+
+[node name="Cube36" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.17217, -0.27808, 5.16306, -0.487836, -1.33225, 6.1312, 0.321331, -1.00819, -9.52601, -48.5611, 37.6509, 30.9571)
+
+[node name="Cube37" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.811034, 0.489806, 9.08802, 0.394527, -1.60236, 1.48446, 0.94963, 0.247387, -8.37841, -38.0881, 39.0604, 18.3851)
+
+[node name="Cube38" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.562462, 4.5852, 9.08802, 2.22046, -3.15648, 1.48446, 1.00352, 4.41429, -8.37841, -45.7694, 41.2124, 10.4344)
+
+[node name="Cube39" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.0801452, 4.5852, 9.50125, 2.07181, -3.15648, 4.24455, 1.39822, 4.41429, -6.834, -49.7807, 46.7816, 7.07017)
+
+[node name="Cube40" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.08001, 4.59102, 7.83331, 2.2061, -3.18203, -1.81141, 0.469622, 4.38983, -9.50535, -54.4661, 50.0071, 2.55939)
+
+[node name="Cube41" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(1.46736, 3.62131, 7.83331, 1.8334, -4.71977, -1.81141, 0.85986, 3.88373, -9.50534, -59.696, 54.4698, -2.60097)
+
+[node name="Cube42" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(0.35708, 5.42792, 7.83331, 2.46886, -0.459545, -1.81141, -0.176212, 4.56069, -9.50534, -44.9906, 51.0693, -20.4453)
+
+[node name="Cube43" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.0569784, 4.84663, 9.0984, 2.49843, -0.0807151, 0.519784, 0.0919945, 5.19395, -8.48189, -30.5298, 47.7253, -37.9928)
+
+[node name="Cube44" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.638728, 4.84663, 8.52938, 2.33369, -0.0807152, 4.47201, 0.632281, 5.19395, -7.8895, -13.6527, 48.6895, -53.7263)
+
+[node name="Cube45" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-1.09811, 4.84663, 7.27847, 1.98341, -0.0807151, 7.5813, 1.0555, 5.19395, -6.67392, -0.63353, 54.7277, -65.781)
+
+[node name="Cube46" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-1.0137, 4.84663, 7.5759, 2.06634, -0.0807151, 7.01094, 0.97802, 5.19395, -6.96032, 12.0942, 61.6844, -77.5495)
+
+[node name="Cube47" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.849192, -2.32651, 10.9773, 2.34826, -1.22265, 3.70645, 0.135664, 6.60045, 4.55581, 26.9039, 66.9612, -69.6896)
+
+[node name="Cube48" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-0.694046, 5.04537, -11.9724, 2.31279, 0.107571, -7.03297, -0.650506, -5.00061, -12.2309, 39.1219, 71.6307, -51.6256)
+
+[node name="Cube49" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-2.44732, 4.24347, 9.30568, 7.9655, 0.456091, 3.94398, 1.18883, 5.67965, -7.26932, 53.478, 74.6895, -41.2383)
+
+[node name="Cube50" parent="Parcour" instance=ExtResource("2_1gbcv")]
+transform = Transform3D(-16.9701, 10.7339, -2.81438, -1.35335, 1.15369, 31.3628, 12.7877, 14.3668, -0.415768, 69.5796, 64.8343, -52.5586)
+
+[node name="Ground" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("WorldBoundaryShape3D_dhcfq")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 0.162603, 0, 0, 0, 1, 0, -0.087341, 0)
+size = Vector3(21, 1, 21)
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 60, -53)
+script = ExtResource("1_7ufk0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02091, 0)
+shape = SubResource("CapsuleShape3D_j514e")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.53893, 0)
+
+[node name="quick_save_menu" parent="Player/Camera3D" node_paths=PackedStringArray("world_spawn", "player") instance=ExtResource("3_j3eiy")]
+visible = false
+world_spawn = NodePath("../../../WorldSpawn")
+player = NodePath("../..")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, 0.353553, 0.612373, -0.707107, 0.353553, 0.612373, 0, -0.866026, 0.5, 11, 12, 10)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.764473, 1.91317, -0.565901)
+omni_range = 9.423
+omni_attenuation = 4.0
+
+[node name="WorldSpawn" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.151384, 0)

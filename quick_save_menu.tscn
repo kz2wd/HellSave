@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmgvw5ty1sgsy"]
+
+[ext_resource type="Script" path="res://quick_save_menu.gd" id="1_vjxt8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fc5o1"]
+font_size = 22
+
+[node name="quick_save_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 370.0
+offset_top = 135.0
+offset_right = -349.0
+offset_bottom = -180.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vjxt8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 408.0
+offset_bottom = 336.0
+color = Color(0.537011, 0.537011, 0.537011, 1)
+
+[node name="Saving_state" type="Label" parent="."]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 95.0
+offset_right = 257.0
+offset_bottom = 154.0
+text = "SAVING"
+label_settings = SubResource("LabelSettings_fc5o1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Saving_luck" type="Label" parent="."]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 184.0
+offset_right = 257.0
+offset_bottom = 243.0
+text = "100 %"
+label_settings = SubResource("LabelSettings_fc5o1")
+horizontal_alignment = 1
+vertical_alignment = 1
