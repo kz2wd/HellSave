@@ -37,11 +37,22 @@ vertical_alignment = 1
 
 [node name="Saving_luck" type="Label" parent="."]
 layout_mode = 0
-offset_left = 142.0
-offset_top = 184.0
-offset_right = 257.0
-offset_bottom = 243.0
-text = "100 %"
+offset_left = 143.0
+offset_top = 158.0
+offset_right = 258.0
+offset_bottom = 217.0
+text = "Need 0%"
+label_settings = SubResource("LabelSettings_fc5o1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Saving_hit" type="Label" parent="."]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 218.0
+offset_right = 266.0
+offset_bottom = 277.0
+text = "Pull : 100 %"
 label_settings = SubResource("LabelSettings_fc5o1")
 horizontal_alignment = 1
 vertical_alignment = 1
