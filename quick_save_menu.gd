@@ -2,7 +2,7 @@ extends Control
 
 
 
-var current_percent: int
+var current_percent: float
 var rng = RandomNumberGenerator.new()
 
 @export var world_spawn: Node3D
@@ -10,12 +10,15 @@ var rng = RandomNumberGenerator.new()
 
 var respawn_position: Vector3
 
+func _ready() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	reset_menu()
+
 func reset_menu() -> void:
 	current_percent = 0
 	respawn_position = world_spawn.position
+	player.reset_time()
 	
-func _ready() -> void:
-	reset_menu()
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -52,7 +55,7 @@ func try_save() -> void:
 	$Saving_hit.text = "pulling..."
 	update_luck_label()
 	await wait(2)
-	var pull = rng.randi_range(0, 100)
+	var pull: float = rng.randf_range(0, 100)
 	update_hit_label(pull)
 	# If fail
 	if pull < current_percent:
@@ -63,12 +66,11 @@ func try_save() -> void:
 		
 	else:
 		$Saving_state.text = "SAVED !"
-		current_percent += 5
-		update_luck_label()
+		current_percent += 2.5
 		respawn_position = player.position
 		await wait(1)
 	
 	self.visible = false
-		
+	
 	
 	
